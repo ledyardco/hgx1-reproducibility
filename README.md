@@ -9,7 +9,7 @@ Verification plus abstention should reduce unsupported assertions compared with 
 ## Status
 
 - Protocol design: registered draft
-- Public GitHub repository: pending
+- Public GitHub repository: published at https://github.com/ledyardco/hgx1-reproducibility
 - Experiment run: not started
 - Measured results: none published
 
@@ -22,3 +22,4 @@ Verification plus abstention should reduce unsupported assertions compared with 
 5. Release result tables and receipts together.
 
 No result should be cited from this packet until `results/` contains a completed run record.
+
