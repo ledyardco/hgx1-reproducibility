@@ -6,6 +6,10 @@ This repository contains the public, key-free materials for HG-X1, the first Hon
 
 A model asked to answer directly may accept false or unsupported premises. The same model, when run with an abstention discipline, should detect more broken-premise prompts while preserving performance on ordinary controls.
 
+## Current status
+
+Same-subject result published. Public materials are key-free and bounded to the experiment layer.
+
 ## Published reports
 
 - `results/SAME-SUBJECT-20261002.md` - canonical same-subject experiment: `gpt-oss-120b` vs the same `gpt-oss-120b` with an abstention discipline, scored by the BullshitBench judge panel.
