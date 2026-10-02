@@ -11,6 +11,7 @@ Verification plus abstention should reduce unsupported assertions compared with 
 - Protocol design: registered draft
 - Public GitHub repository: published at https://github.com/ledyardco/hgx1-reproducibility
 - Pilot run: completed 2026-10-02 (`results/PILOT-20261002.md`)
+- Full stack shakedown: completed 2026-10-02 (`results/FULL-STACK-20261002.md`)
 - Official experiment run: not started
 - Official measured results: none published
 
