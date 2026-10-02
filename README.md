@@ -10,8 +10,9 @@ Verification plus abstention should reduce unsupported assertions compared with 
 
 - Protocol design: registered draft
 - Public GitHub repository: published at https://github.com/ledyardco/hgx1-reproducibility
-- Experiment run: not started
-- Measured results: none published
+- Pilot run: completed 2026-10-02 (`results/PILOT-20261002.md`)
+- Official experiment run: not started
+- Official measured results: none published
 
 ## Required before public results
 
@@ -21,5 +22,5 @@ Verification plus abstention should reduce unsupported assertions compared with 
 4. Publish failures and abstentions with the same prominence as positive results.
 5. Release result tables and receipts together.
 
-No result should be cited from this packet until `results/` contains a completed run record.
+Do not cite the pilot as an official HG-X1 result. No official result should be cited until `results/` contains a completed full-run record with frozen protocol, model pins, controls, k=3 repeats, and binding receipts.
 

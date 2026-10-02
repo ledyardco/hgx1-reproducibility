@@ -1,2 +1,2 @@
-﻿# Placeholder requirements for the public reproducibility repo.
-# Fill with exact pinned versions before a run.
+﻿# No third-party Python packages required for the pilot scripts.
+# Python 3.10+ recommended.
