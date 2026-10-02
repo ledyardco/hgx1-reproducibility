@@ -1,27 +1,34 @@
-﻿# HG-X1 Reproducibility Packet (Draft)
+# HG-X1 Reproducibility Packet
 
-This directory is the GitHub-ready scaffold for the first GenXis Research experiment.
+This repository contains the public, key-free materials for HG-X1, the first Honesty Gap experiment.
 
-## Target claim
+## Claim under test
 
-Verification plus abstention should reduce unsupported assertions compared with fluent baseline answers on the same question set.
+A model asked to answer directly may accept false or unsupported premises. The same model, when run with an abstention discipline, should detect more broken-premise prompts while preserving performance on ordinary controls.
 
-## Status
+## Published reports
 
-- Protocol design: registered draft
-- Public GitHub repository: published at https://github.com/ledyardco/hgx1-reproducibility
-- Pilot run: completed 2026-10-02 (`results/PILOT-20261002.md`)
-- Full stack shakedown: completed 2026-10-02 (`results/FULL-STACK-20261002.md`)
-- Same-subject canonical-judged experiment: completed 2026-10-02 (`results/SAME-SUBJECT-20261002.md`)
-- Official measured results: bounded same-subject result published; broader/external replication not claimed
+- `results/SAME-SUBJECT-20261002.md` - canonical same-subject experiment: `gpt-oss-120b` vs the same `gpt-oss-120b` with an abstention discipline, scored by the BullshitBench judge panel.
+- `results/FULL-STACK-20261002.md` - full-stack shakedown. Public for provenance; not the canonical same-subject result.
+- `results/PILOT-20261002.md` - 10-question pilot. Public for provenance; not an official result.
 
-## Required before public results
+## Same-subject result
 
-1. Freeze protocol and corpus/source hash.
-2. Pin subject model, retrieval mechanism, verifier settings, and scoring rules.
-3. Run all arms with transcripts retained.
-4. Publish failures and abstentions with the same prominence as positive results.
-5. Release result tables and receipts together.
+- Corpus: BullshitBench v2, 100 nonsensical prompts plus 20 controls.
+- Repeats: k = 3.
+- Subject model: `gpt-oss-120b` in both arms.
+- Arm A: direct answer.
+- Arm C: abstention discipline.
+- Judging: canonical BullshitBench three-judge panel.
 
-Do not cite the pilot as an official HG-X1 result. No official result should be cited until `results/` contains a completed full-run record with frozen protocol, model pins, controls, k=3 repeats, and binding receipts.
+Majority-by-item outcome:
+
+| Arm | Nonsense majority clear | Controls majority correct |
+|---|---:|---:|
+| Direct answer | 8/99 | 19/20 |
+| Abstention discipline | 70/100 | 20/20 |
+
+## Limits
+
+This is one benchmark and one subject model. It is not peer review, external replication, a general proof, or an implementation disclosure. Public scripts are key-free; users must supply their own API keys and corpus access where required.
 
