@@ -1,0 +1,2 @@
+﻿# Placeholder requirements for the public reproducibility repo.
+# Fill with exact pinned versions before a run.
